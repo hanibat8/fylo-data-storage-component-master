@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: initial;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+    background-image: url(../images/bg-mobile.svg);
+    background-size: cover;
+    color:rgb(224, 221, 221);
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container{
+    width:90%;
+    margin: 0 auto;
+}
+
+.col + .col{
+    margin-top: 1.8rem;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    width: 15rem;
+    margin-bottom: 2.4rem;
+}
+
+.attribution { 
+    margin-top: 10rem;
+    font-size: 1.3rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    font-size: 1.3rem;
+    text-decoration: none; 
+    color:rgb(224, 221, 221);
+}
+
+.box{
+    padding:3.5rem 3rem 4.9rem 3rem;
+    box-shadow: 1 1.2rem 2.5rem rgba(0,0,0,.2);
+    background-color: hsl(229, 65%, 27%);
+    border-radius: 5px;
+}
+
+.box__para{
+    text-align: center;
+    font-weight: 400;
+}
+
+.box__para span{
+    font-weight: 900;
+}
+
+.box-rounded{
+    padding: 3rem;
+    box-shadow: 1 1.2rem 2.5rem rgba(0,0,0,.2);
+    background-color: hsl(229, 65%, 27%);
+    border-radius: 5px;
+    border-top-right-radius: 8rem;
+}
+
+.box-rounded__icon:not(:last-child){
+    margin-right: 1.6rem;
+}
+
+.box-rounded__icon{
+    width: 2.2rem;
+    height: 1.9rem;
+    box-shadow: 1 1rem 1rem rgba(0,0,0,.2);
+    padding: 1.2rem;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.col1{
+    position: relative;
+}
+
+.progress-bar-container{
+    margin-top: 2rem;
+    height:2rem;
+    box-shadow: 1 1rem 1rem rgba(0,0,0,.2);
+    border-radius: 10px;
+  background-color: #000;
+}
+
+.progress-bar{
+    height:2rem;
+    box-shadow: 1 1rem 1rem rgba(0,0,0,.2);
+    width: 81.5%;
+    background-image: linear-gradient(to right,rgb(247, 128, 128) 0%,rgb(156, 65, 118) 94%, #fff 100%);
+    border-radius: 10px;
+}
+
+.values{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.box1{
+    position: absolute;
+    box-shadow: 1 1.2rem 2.5rem rgba(0,0,0,.2);
+    background-color:#fff;
+    border-radius: 10px;
+    padding:.3rem 3.5rem;
+    bottom:-20%;
+    left:50%;
+    transform: translate(-50%,-10%);
+    z-index: 10;
+    color:#000;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.p1{
+    font-size: 5rem;
+    font-weight: 600;
+    margin-right: .8rem;
+}
+
+.p2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:rgb(153, 151, 151);
+    align-self: center;
+}
+
+@media(min-width:900px){
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .col{
+        width: 40%;
+        margin-right: 5rem;
+    }
+
+    .col1{
+        width: 55%;
+    }
+
+    .box-rounded{
+        padding: 5rem;
+    }
+
+    .box{
+        padding:3rem ;
+    }
+
+    .box__para{
+        text-align:start;
+        margin-top: .5rem;
+    }
+
+    .box1{
+        position: absolute;
+        bottom:160%;
+        left:80%;
+        transform: translate(-80%,160%);
+      
+    }
+    
+}
+
+@media(min-width:1200px){
+    .container{
+        width:80%;
+    }
+
+}
+
+@media(min-width:1500px){
+    .container{
+        width:70%;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .col{
+        width: 30%;
+        margin-right: 5rem;
+    }
+
+    .col1{
+        width: 55%;
+    }
+
+    .box-rounded{
+        padding: 5rem;
+    }
+
+    .box{
+        padding:3rem ;
+    }
+
+    .box__para{
+        text-align:start;
+        margin-top: .5rem;
+    }
+
+    .box1{
+        position: absolute;
+        bottom:160%;
+        left:80%;
+        transform: translate(-80%,160%);
+      
+    }
+    
+}
